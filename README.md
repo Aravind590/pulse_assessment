@@ -8,7 +8,7 @@ This solution is built as part of the **Pulsegen Assignment**.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Daily batch ingestion of Google Play Store reviews  
 - Agentic topic extraction (no LDA / TopicBERT)  
@@ -19,7 +19,7 @@ This solution is built as part of the **Pulsegen Assignment**.
 
 ---
 
-## 🧠 Why Agentic AI?
+##  Why Agentic AI?
 
 Traditional topic models struggle with:
 - Short, noisy app reviews
