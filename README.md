@@ -1,15 +1,34 @@
-## Pulsegen AI Review Trend Analysis
+# Pulsegen AI Review Trend Analysis
 
-This project builds an Agentic AI system to analyze Google Play Store reviews
-and generate rolling  topic trend reports.
+This project implements an **Agentic AI system** to analyze Google Play Store reviews and generate **monthly topic trend reports** for product teams.
 
-### Features
-- Daily batch ingestion
-- LLM-based topic extraction
-- Semantic topic consolidation
-- Rolling T-30 trend reports
+The system ingests reviews **daily (batch-wise)**, extracts high-recall feedback topics using an agentic approach, consolidates semantically similar issues, and produces a **time-series trend table**.
 
-### Run
-1. Add reviews to data
-2. Set OPENAI_API_KEY
-3. Run: python main.py
+This solution is built as part of the **Pulsegen Assignment**.
+
+---
+
+## 🚀 Features
+
+- Daily batch ingestion of Google Play Store reviews  
+- Agentic topic extraction (no LDA / TopicBERT)  
+- Semantic consolidation of similar feedback  
+- Monthly trend analysis (Topics × Dates)  
+- CSV output report (submission-ready)  
+- Single-file, end-to-end executable pipeline  
+
+---
+
+## 🧠 Why Agentic AI?
+
+Traditional topic models struggle with:
+- Short, noisy app reviews
+- Evolving user issues
+- Semantic duplication (e.g., “rude delivery guy” vs “delivery partner behaved badly”)
+
+This project uses an **agent-based approach** that:
+- Maximizes recall
+- Dynamically adapts topics
+- Produces meaningful trends for product decision-making
+
+---
