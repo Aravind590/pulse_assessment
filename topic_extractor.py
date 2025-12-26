@@ -1,7 +1,5 @@
-
 def agentic_topic_extractor(review):
     review = review.lower()
-
     if any(x in review for x in ["rude", "impolite", "behaved badly"]):
         return "Delivery partner rude"
 
