@@ -1,7 +1,6 @@
 def run_monthly_pipeline(app_id, target_date):
     target = datetime.strptime(target_date, "%Y-%m-%d")
     month_start = target.replace(day=1)
-
     dates = []
     d = month_start
     while d <= target:
@@ -9,7 +8,6 @@ def run_monthly_pipeline(app_id, target_date):
         d += timedelta(days=1)
 
     topic_store = defaultdict(lambda: defaultdict(int))
-
     for date in dates:
         print(f"Processing batch for {date}...")
         process_day(app_id, date, topic_store)
