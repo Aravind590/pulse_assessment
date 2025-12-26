@@ -12,4 +12,4 @@ if __name__ == "__main__":
     output_file = f"trend_report_{target_date}.csv"
     trend_df.to_csv(output_file)
 
-    print(f"\n✅ Report saved as {output_file}")
+    print(f"\n Report saved as {output_file}")
